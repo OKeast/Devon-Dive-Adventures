@@ -15,3 +15,9 @@ Vibrant colours (Main colour scheme is Navy Blue and orange)
 Key elements
 Feature images from various travel destinations
 Include customer reviews/testimonials
+
+the webisite will have 4 total pages:
+Home page - brief intoduciton into the company
+activity page - information on all the activitys they offer
+bookings page - includs how to book, dates and locations
+help page - reviews section and contact us section
