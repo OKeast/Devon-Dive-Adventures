@@ -7,17 +7,22 @@ About them/what they aim for
 •	Night sailing
 •	Fishing
 •	Scuba diving
+
 Purpose of the website
 Inform customers of the company and the above points
 Visual style
 Dynamic and adventurous atmosphere/feeling
 Vibrant colours (Main colour scheme is Navy Blue and orange)
+
 Key elements
 Feature images from various travel destinations
 Include customer reviews/testimonials
 
-the webisite will have 4 total pages:
+the website will have 3 pages per contributor with the following as mandatory pages:
 Home page - brief intoduciton into the company
-activity page - information on all the activitys they offer
+about us page - 
+activity page - information on all the activities they offer
 bookings page - includs how to book, dates and locations
-help page - reviews section and contact us section
+review page - include customer reviews of their experiences
+contact page - this could be integrated into the other pages as a footer instead
+credits page - credits for who is behind the company and who was involved in the creation of the website 
