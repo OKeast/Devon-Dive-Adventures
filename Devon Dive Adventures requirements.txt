@@ -20,7 +20,7 @@ Include customer reviews/testimonials
 
 the website will have 3 pages per contributor with the following as mandatory pages:
 Home page - brief intoduciton into the company
-about us page - 
+about us page - reasons for creation of company 
 activity page - information on all the activities they offer
 bookings page - includs how to book, dates and locations
 review page - include customer reviews of their experiences
