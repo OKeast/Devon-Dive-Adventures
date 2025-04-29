@@ -2,7 +2,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     width: 100%; 
-    background-color: #e5f3fd;
+    background-color: #2E5A88;
   }
   
 .stickybanner{
@@ -14,7 +14,7 @@ html, body {
   font-family: 'Arial', sans-serif;
   font-size: 3rem; 
   font-weight: bold; 
-  color: #333; 
+  color: #2E5A88; 
   text-align: center;
   letter-spacing: 2px; 
   line-height: 1.4; 
@@ -24,18 +24,6 @@ html, body {
   padding: 10px 0; 
 
 }
-.banner {
-    color: black;
-    margin: 0px 0px 0px 0px;
-    padding: 40px;
-    border-style: hidden;
-    border-width: 5px;
-    background-color: gray;
-    background-image: url('Designer.jpeg');
-    background-size: cover; /* This ensures the image covers the entire banner */
-    background-position: center; /* This centers the image within the banner */
-
-  }
 
 #navigationBar {
 list-style-type: none;
@@ -44,7 +32,7 @@ display: flex;
 margin: 0px 0px 0px 0px;
 padding: 0;
 overflow: hidden;
-background-color:   black;
+background-color:   #FF7417;
 }
 
 #navigationBar li {
@@ -65,12 +53,24 @@ text-decoration: none;
 background-color:   lightgray;
 }
 
+#banner {
+    color: black;
+    margin: 0px 0px 0px 0px;
+    padding: 40px;
+    border-style: hidden;
+    border-width: 5px;
+    background-color: gray;
+    background-image: url('DDALogo.png');
+    background-size: cover; /* This ensures the image covers the entire banner */
+    background-position: center; /* This centers the image within the banner */
+
+  }
 
 .main{
     display: flex;
     flex-direction: column;
     border: 1px, solid, green;
-    margin: 25px 33% 5px 25%;
+    margin: 25px 25% 5px 25%;
     height:1000px;
     width: auto;
     max-width: 50%;
@@ -78,8 +78,13 @@ background-color:   lightgray;
 }
 
 footer {
-  background-color: #777;
+  background-color: #182f47;
   padding: 10px;
   text-align: center;
   color: white;
+}
+
+p{
+    color: white;
+    font-size: 25px;
 }
