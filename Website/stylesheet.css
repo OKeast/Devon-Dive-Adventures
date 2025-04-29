@@ -1,0 +1,85 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%; 
+    background-color: #e5f3fd;
+  }
+  
+.stickybanner{
+  position: sticky;
+  top: 0px;
+}
+
+.title {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center;
+  letter-spacing: 2px; 
+  line-height: 1.4; 
+  text-transform: uppercase; 
+  margin-top: 30px; 
+  margin-bottom: 15px; 
+  padding: 10px 0; 
+
+}
+.banner {
+    color: black;
+    margin: 0px 0px 0px 0px;
+    padding: 40px;
+    border-style: hidden;
+    border-width: 5px;
+    background-color: gray;
+    background-image: url('Designer.jpeg');
+    background-size: cover; /* This ensures the image covers the entire banner */
+    background-position: center; /* This centers the image within the banner */
+
+  }
+
+#navigationBar {
+list-style-type: none;
+justify-content: center;
+display: flex;
+margin: 0px 0px 0px 0px;
+padding: 0;
+overflow: hidden;
+background-color:   black;
+}
+
+#navigationBar li {
+margin: 0px 50px;
+float: left;
+background-color: gray;
+}
+
+#navigationBar li a {
+display: block;
+color: white;
+text-align: center;
+padding: 20px 50px;
+text-decoration: none;
+}
+
+#navigationBar li a:hover {
+background-color:   lightgray;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px, solid, green;
+    margin: 25px 33% 5px 25%;
+    height:1000px;
+    width: auto;
+    max-width: 50%;
+    align-items: center;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
