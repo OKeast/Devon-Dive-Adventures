@@ -9,7 +9,71 @@
     <title>About Us</title>
 </head>
 
+<style>
+
+  .grid-container{
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: auto auto auto;
+    background-image: url(Images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 5%;
+    gap: 5%;
+    
+  }
+
+  .grid-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+
+  body{
+    background-color: rgb(43, 169, 195);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+
+  div.about-us {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: left;
+    border-color: black;
+    border-style: solid;
+    border: 10px;
+  }
+  div.about-us-title{
+    text-align: center;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+</style>
+
+
 <body>
+
+<!--Nav Bar-->
+  <div class="stickybanner">
+    <div class="banner">
+        <img src = "DDALogo.png" alt = "logo">
+    </div>
+    <div class="navbar"></div>
+        <ul id = "navigationBar">
+           <li><a href="page1.html">Home</a></li>
+           <li><a href="page2.html">Store</a></li>
+           <li><a href="page3.html">Contact</a></li>
+           <li><a href="about_us.html">About Us</a></li>
+     </ul>
+    </div>
+
 
 <!--Title-->
   <h1>
@@ -17,35 +81,63 @@
   </h1>
 
   <hr>
-  
+
+<div class="grid-container">
 <!--Who Are We Section-->
-  <h2>
-     Who are we?
-  </h2>
+  <div class="about-us">
+    <div class="about-us-title">
+      <h2>
+         Who we are
+      </h2>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Eveniet ipsa corrupti, maxime cupiditate beatae quidem similique vitae commodi dolor praesentium maiores earum, sequi veniam eligendi consectetur, ratione ea doloribus! 
+      Voluptatibus?
+    </p>
 
-  <p>
-    d
-  </p>
+  </div>
+
+    <br>
+
+  <!--Company History Section-->
+  <div class="about-us">
+    <div class="about-us-title">
+      <h2> 
+          Our History
+      </h2>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Iste officia porro distinctio dignissimos obcaecati atque reiciendis architecto voluptatem aspernatur, deserunt nemo? Velit dolorem quaerat sit!
+      Dolore iusto odit neque exercitationem!
+    </p>
+  </div>
+</div>
 
   <br>
 
-  <h2> 
-      Our History
-  </h2>
-  <p>
-
-  </p>
-  <br>
-
-  <h2>
+<!--Meet The Team Section-->
+<div class="about-us">
+  <div class="about-us-title">
+    <h2>
      Meet the team
-  </h2>
+    </h2>
+  </div>
   <p>
-    s
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, error commodi explicabo nihil temporibus aliquid, culpa ut nesciunt quas illum enim similique voluptates consectetur dolorem assumenda, soluta illo maiores nostrum.
   </p>
+</div>
   <br>
 
-
+  <footer>
+    <p>footer</p>
+  </footer>
     
 </body>
+
+
+
+
+
 </html>
