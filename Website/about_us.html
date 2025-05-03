@@ -11,27 +11,28 @@
 
 <style>
 
-  .grid-container{
-    display: grid;
-    align-items: stretch;
-    grid-template-columns: auto auto auto;
+
+
+  .flex-container-1 {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-flow: row wrap;
     background-image: url(Images/background.jpg);
+    background-size: cover;;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5%;
-    gap: 5%;
-    
   }
 
-  .grid-container > div {
-  background-color: #f1f1f1;
-  border: 1px solid black;
-  padding: 0px;
-  font-size: 30px;
-  text-align: center;
+  .flex-container-1 > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    min-width: 500px;
+    flex: 45%;
+    align-items: stretch;
   }
-
 
   body{
     background-color: rgb(43, 169, 195);
@@ -41,18 +42,35 @@
   }
   
 
-  div.about-us {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
+  div.about-us-card {
+    background-color: rgba(255, 255, 255, 0.436);
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    border: 10px;
     border-color: black;
     border-style: solid;
+    border-radius: 33px;
     border: 10px;
   }
-  div.about-us-title{
+  div.about-us-card-title{
     text-align: center;
     color: azure;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
     background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .learn-more-buttom{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border-color: black;
+    border-style: solid;
+    height: 50px;
+    width: 50%;
+    margin-top: auto;
+    margin-left: 22.5%;
+    margin-bottom: 2%;
   }
 </style>
 
@@ -81,10 +99,10 @@
 
   <hr>
 
-<div class="grid-container">
+<div class="flex-container-1">
 <!--Who Are We Section-->
-  <div class="about-us">
-    <div class="about-us-title">
+  <div class="about-us-card">
+    <div class="about-us-card-title">
       <h2>
          Who we are
       </h2>
@@ -94,14 +112,16 @@
       Eveniet ipsa corrupti, maxime cupiditate beatae quidem similique vitae commodi dolor praesentium maiores earum, sequi veniam eligendi consectetur, ratione ea doloribus! 
       Voluptatibus?
     </p>
+    <button class="learn-more-buttom">
+      Learn More
+    </button>
 
   </div>
 
-    <br>
 
   <!--Company History Section-->
-  <div class="about-us">
-    <div class="about-us-title">
+  <div class="about-us-card">
+    <div class="about-us-card-title">
       <h2> 
           Our History
       </h2>
@@ -111,10 +131,13 @@
        Iste officia porro distinctio dignissimos obcaecati atque reiciendis architecto voluptatem aspernatur, deserunt nemo? Velit dolorem quaerat sit!
       Dolore iusto odit neque exercitationem!
     </p>
+    <button class="learn-more-buttom">
+      Learn More
+    </button>
+
   </div>
 </div>
 
-  <br>
 
 <!--Meet The Team Section-->
 <div class="about-us">
@@ -127,7 +150,6 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, error commodi explicabo nihil temporibus aliquid, culpa ut nesciunt quas illum enim similique voluptates consectetur dolorem assumenda, soluta illo maiores nostrum.
   </p>
 </div>
-  <br>
 
   <footer>
     <p>footer</p>
