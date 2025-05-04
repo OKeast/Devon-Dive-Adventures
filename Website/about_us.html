@@ -23,6 +23,8 @@
     background-repeat: no-repeat;
   }
 
+  
+
   .flex-container-1 > div {
     width: 100px;
     margin: 10px;
@@ -34,6 +36,23 @@
     align-items: stretch;
   }
 
+  
+  .flex-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .flex-container-2 > div {
+    margin: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    min-width: 50px;
+    align-items: stretch;
+  }
+
   body{
     background-color: rgb(43, 169, 195);
     background-repeat: no-repeat;
@@ -42,18 +61,18 @@
   }
   
 
-  div.about-us-card {
-    background-color: rgba(255, 255, 255, 0.436);
+  div.about-us-card-rounded {
+    background-color: rgba(0, 0, 0, 0.436);
     display: flex;
     flex-direction: column;
     text-align: left;
-    border: 10px;
+    border: 2px;
     border-color: black;
     border-style: solid;
     border-radius: 33px;
-    border: 10px;
   }
-  div.about-us-card-title{
+
+  div.about-us-card-title-rounded{
     text-align: center;
     color: azure;
     border-top-left-radius: 33px;
@@ -61,10 +80,11 @@
     background-color: rgba(0, 0, 0, 0.2);
   }
 
+
   .learn-more-buttom{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.781);
     color: rgb(0, 0, 0);
-    border-color: black;
+    border-color: rgb(255, 255, 255);
     border-style: solid;
     height: 50px;
     width: 50%;
@@ -72,6 +92,39 @@
     margin-left: 22.5%;
     margin-bottom: 2%;
   }
+
+  div.about-us-card {
+    background-color: rgba(0, 0, 0, 0.436);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 0px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  div.about-us-card-title{
+    text-align: center;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .employee-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10%;
+    background-color: rgb(71, 70, 70);
+  }
+
+  .employee-container{
+    padding: 2px 16px;
+  }
+
+  .employee-image{
+    border-radius: 10% 10% 0 0;
+    width: 100%;
+    height: auto;
+  }
+
 </style>
 
 
@@ -100,9 +153,11 @@
   <hr>
 
 <div class="flex-container-1">
+
+  
 <!--Who Are We Section-->
-  <div class="about-us-card">
-    <div class="about-us-card-title">
+  <div class="about-us-card-rounded">
+    <div class="about-us-card-title-rounded">
       <h2>
          Who we are
       </h2>
@@ -118,10 +173,9 @@
 
   </div>
 
-
   <!--Company History Section-->
-  <div class="about-us-card">
-    <div class="about-us-card-title">
+  <div class="about-us-card-rounded">
+    <div class="about-us-card-title-rounded">
       <h2> 
           Our History
       </h2>
@@ -138,10 +192,14 @@
   </div>
 </div>
 
+<!--WhiteSpace-->
+<br>
+<br>
+<br>
 
 <!--Meet The Team Section-->
-<div class="about-us">
-  <div class="about-us-title">
+<div class="about-us-card">
+  <div class="about-us-card-title">
     <h2>
      Meet the team
     </h2>
@@ -151,6 +209,60 @@
   </p>
 </div>
 
+<div class="flex-container-2">
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+</div>
   <footer>
     <p>footer</p>
   </footer>
