@@ -37,20 +37,12 @@
   }
 
   
-  .flex-container-2 {
-    display: flex;
+  .grid-container {
+    display: grid;
+    border: 1px solid black;
+    background-size: cover;
+    grid-template-columns: repeat(3, 20%);
     justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-
-  .flex-container-2 > div {
-    margin: 50px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 30px;
-    min-width: 50px;
-    align-items: stretch;
   }
 
   body{
@@ -113,16 +105,19 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 10%;
     background-color: rgb(71, 70, 70);
-    flex: 1 1 30%;
     max-width: 300px;
-    margin: 20px;
+    margin: 10px;
+    justify-self: center;
   }
 
 
-  
-
   .employee-container{
     padding: 2px 16px;
+    justify-self: center;
+  }
+
+  .employee-container > h4{
+    justify-self: center;
   }
 
   .employee-image{
@@ -198,10 +193,6 @@
   </div>
 </div>
 
-<!--WhiteSpace-->
-<br>
-<br>
-<br>
 
 <!--Meet The Team Section-->
 <div class="about-us-card">
@@ -215,7 +206,7 @@
   </p>
 </div>
 
-<div class="flex-container-2">
+<div class="grid-container">
 
 <div class="employee-card">
   <img class="employee-image" src="Images/Employee.png" alt="Avatar">
