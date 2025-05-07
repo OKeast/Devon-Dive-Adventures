@@ -37,21 +37,13 @@
   }
 
   
-  .flex-container-2 {
-    display: flex;
+  .grid-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 10px;
     justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
   }
-
-  .flex-container-2 > div {
-    margin: 50px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 30px;
-    min-width: 50px;
-    align-items: stretch;
-  }
+  
 
   body{
     background-color: #2E5A88;
@@ -116,6 +108,8 @@
     flex: 1 1 30%;
     max-width: 300px;
     margin: 20px;
+    text-align: center;
+    font-size: 20px;
   }
 
 
@@ -198,10 +192,7 @@
   </div>
 </div>
 
-<!--WhiteSpace-->
-<br>
-<br>
-<br>
+
 
 <!--Meet The Team Section-->
 <div class="about-us-card">
@@ -215,7 +206,7 @@
   </p>
 </div>
 
-<div class="flex-container-2">
+<div class="grid-container">
 
 <div class="employee-card">
   <img class="employee-image" src="Images/Employee.png" alt="Avatar">
