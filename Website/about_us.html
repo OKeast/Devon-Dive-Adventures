@@ -12,7 +12,6 @@
 <style>
 
 
-
   .flex-container-1 {
     display: flex;
     background-color: DodgerBlue;
@@ -21,6 +20,8 @@
     background-size: cover;;
     background-position: center center;
     background-repeat: no-repeat;
+    justify-content: center;
+    gap: 200px;
   }
 
   
@@ -30,8 +31,9 @@
     margin: 10px;
     text-align: center;
     line-height: 75px;
-    font-size: 30px;
+    font-size: 50px;
     min-width: 500px;
+    max-width: 1000px;
     flex: 45%;
     align-items: stretch;
   }
@@ -39,9 +41,10 @@
   
   .grid-container{
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    gap: 10px;
+    grid-template-columns: repeat(3, 300px);
+    gap: 200px;
     justify-content: center;
+    row-gap: 20px;
   }
   
 
@@ -64,6 +67,10 @@
     border-radius: 33px;
   }
 
+  div.about-us-card-rounded > p{
+    font-size: 40px;
+  }
+
   div.about-us-card-title-rounded{
     text-align: center;
     color: azure;
@@ -83,13 +90,20 @@
     margin-top: auto;
     margin-left: 22.5%;
     margin-bottom: 2%;
+    border-radius: 10px;
+  }
+
+  .learn-more-buttom:hover {
+    transition: 0.5s;
+    background-color: black;
+    a{color: white;}
   }
 
   div.about-us-card {
     background-color: rgba(0, 0, 0, 0.436);
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     border: 0px;
     border-color: black;
     border-style: solid;
@@ -110,7 +124,6 @@
     text-align: center;
     font-size: 20px;
   }
-
 
   .employee-container{
     padding: 2px 16px;
@@ -139,7 +152,7 @@
     </div>
     <div class="navbar"></div>
         <ul id = "navigationBar">
-           <li><a href="page1.html">Home</a></li>
+           <li><a href="index.html">Home</a></li>
            <li><a href="page2.html">Store</a></li>
            <li><a href="page3.html">Contact</a></li>
            <li><a href="about_us.html">About Us</a></li>
@@ -170,7 +183,7 @@
       Voluptatibus?
     </p>
     <button class="learn-more-buttom">
-      Learn More
+      <a href="page1.html">Learn More </a>
     </button>
 
   </div>
@@ -188,7 +201,7 @@
       Dolore iusto odit neque exercitationem!
     </p>
     <button class="learn-more-buttom">
-      Learn More
+      <a href="page1.html">Learn More </a>
     </button>
 
   </div>
@@ -267,9 +280,5 @@
   </footer>
     
 </body>
-
-
-
-
 
 </html>
