@@ -72,8 +72,6 @@ img{
 
 /*About Us Page*/
 
-
-
 .flex-container-1 {
   display: flex;
   background-color: DodgerBlue;
@@ -204,6 +202,48 @@ div.about-us-card-title{
   height: auto;
 }
 
+/*Company History Page*/
+
+    .grid-container-2-columns{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        position: relative;
+        gap: 10px;
+        
+        
+    }
+
+    .grid-container-2-columns > div{
+        border: 2px solid black;
+    }
+
+    .background-gradient{
+        background-image: linear-gradient(to right, #000000 10%, #00000000 90%);
+        border: 2px solid black;
+        background-repeat: no-repeat;
+        height: 33%;
+    }
+
+    .background-image{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .text-wrapper{
+        width: 40%;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        height:auto;
+    }
+    
+
+/*Other Pages*/
 
 footer {
   background-color: #182f47;
