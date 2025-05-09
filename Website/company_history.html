@@ -6,11 +6,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>About Us</title>
+    <title>Company History</title>
 </head>
 
 <style>
+    .grid-container-2-columns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 40px;
+        
+    }
 
+    .grid-container-2-columns > div{
+        background-image: linear-gradient(to right, #000000 10%, #00000000 90%);
+        border: 2px solid black;
+    }
+
+    .background-gradient{
+        background-image: linear-gradient(to right, #000000 10%, #00000000 90%);
+        border: 2px solid black;
+    }
+
+    .background-image{
+        background-image: url(Images/0106-0001-0351-resized.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .text-wrapper{
+        width: 50%;
+    }
+    
 </style>
 
 
@@ -29,11 +57,11 @@
            <li><a href="about_us.html">About Us</a></li>
      </ul>
     </div>
-
+ 
 
 <!--Title-->
   <h1>
-      About Us
+      Company History
   </h1>
 
   <hr>
@@ -54,10 +82,11 @@
       Voluptatibus?
     </p>
     <a href="company_history.html">
-      <button class="learn-more-buttom">
-      Learn More
-      </button>
+        <button class="learn-more-buttom">
+        Learn More
+        </button>
     </a>
+   
 
   </div>
 
@@ -65,7 +94,7 @@
   <div class="about-us-card-rounded">
     <div class="about-us-card-title-rounded">
       <h2> 
-          Our History
+          Meet the team
       </h2>
     </div>
     <p>
@@ -73,10 +102,12 @@
        Iste officia porro distinctio dignissimos obcaecati atque reiciendis architecto voluptatem aspernatur, deserunt nemo? Velit dolorem quaerat sit!
       Dolore iusto odit neque exercitationem!
     </p>
-    
-      <a href="company_history.html"><button class="learn-more-buttom">
+    <a href="about_us.html">
+        <button class="learn-more-buttom">
         Learn More
-      </button></a>
+        </button>
+    </a>
+  
 
   </div>
 </div>
@@ -87,7 +118,7 @@
 <div class="about-us-card">
   <div class="about-us-card-title">
     <h2>
-     Meet the team
+     Dive into our history
     </h2>
   </div>
   <p>
@@ -95,64 +126,23 @@
   </p>
 </div>
 
-<div class="grid-container">
+<br>
+<br>
 
-<div class="employee-card">
-  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
-  <div class="employee-container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p> 
-  </div>
+
+<div class="background-image">
+    <div class="background-gradient">
+        <div class="text-wrapper">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sit eos consequuntur debitis temporibus unde? Esse explicabo facere dignissimos nostrum enim iure rerum molestiae, optio temporibus numquam sapiente exercitationem magni?
+            </p>
+        </div>
+    </div>
 </div>
-
-<div class="employee-card">
-  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
-  <div class="employee-container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p> 
-  </div>
-</div>
-
-<div class="employee-card">
-  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
-  <div class="employee-container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p> 
-  </div>
-</div>
-
-
-<div class="employee-card">
-  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
-  <div class="employee-container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p> 
-  </div>
-</div>
-
-
-<div class="employee-card">
-  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
-  <div class="employee-container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p> 
-  </div>
-</div>
-
-
-<div class="employee-card">
-  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
-  <div class="employee-container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p> 
-  </div>
-</div>
-
-</div>
-  <footer>
+<footer>
     <p>footer</p>
-  </footer>
-    
-</body>
+</footer>
 
+
+</body>
 </html>
