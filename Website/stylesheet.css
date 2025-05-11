@@ -14,13 +14,14 @@ html, body {
 }
 
 #navigationBar {
-list-style-type: none;
-justify-content: center;
-display: flex;
-margin: 0px 0px 0px 0px;
-padding: 0;
-overflow: hidden;
-background-color:   #FF7417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #FF7417;
+  flex-wrap: wrap;
 }
 
 #navigationBar li {
@@ -31,16 +32,21 @@ position: relative;
 }
 
 #navigationBar li a {
-display: block;
-color: white;
-text-align: center;
-padding: 20px 50px;
-text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color: gray;
+  border-radius: 4px; 
+  transition: background-color 0.3s;
 }
 
 #navigationBar li a:hover {
-background-color:   lightgray;
+  background-color: lightgray;
+  color: black;
 }
+
 
 .banner {
     color: black;
