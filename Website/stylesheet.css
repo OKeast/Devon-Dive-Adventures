@@ -71,7 +71,11 @@ footer {
   text-align: center;
   color: white;
 }
-
+.footertitle{
+      width: 100%;
+      height: 20%;
+      border: 1px, solid, green;
+}
 p{
     color: white;
     font-size: 25px;
