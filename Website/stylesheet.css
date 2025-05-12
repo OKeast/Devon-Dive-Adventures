@@ -49,8 +49,16 @@ html, body {
     padding: 0px;
     background-color:#182f47;
     background-position: left;
-
+    border: 1px solid green;
   }
+
+.bannerright{
+  border: 1px solid orange;
+  display: inline-flex;
+  float: right;
+  align-items: right;
+  margin: auto;
+}
 
 img{
     margin: 0px 0px 0px 0px;
@@ -132,6 +140,7 @@ h1{
   }
 
 .button {
+  display: inline-flex;
   background-color: #FF7417;      
   color: white;                   
   padding: 12px 24px;          
