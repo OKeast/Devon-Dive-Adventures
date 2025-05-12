@@ -25,7 +25,7 @@ html, body {
 }
 
 #navigationBar li {
-margin: 0px 50px;
+margin: 0px 20px;
 float: left;
 background-color: gray;
 position: relative;
@@ -51,13 +51,16 @@ position: relative;
 }
 
 
-.banner {
+.banner{
     color: black;
     margin: 0px 0px 0px 0px;
     padding: 0px;
     background-color:#182f47;
     background-position: left;
     border: 1px solid green;
+    display: inline-flex; 
+    width: 100%;
+  
   }
 
 .bannerright{
@@ -66,6 +69,10 @@ position: relative;
   float: right;
   align-items: right;
   margin: auto;
+  width: 29%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+
 }
 
 img{
