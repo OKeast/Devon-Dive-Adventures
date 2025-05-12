@@ -2,11 +2,16 @@ html, body {
     margin: 0px;
     padding: 0px;
     width: 100%; 
-    background-color: #2E5A88;
+    min-height: 100vh;
+    background-image: linear-gradient(#447db9 10%, #193c61 90%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  
 
-
+  .main-content {
+    padding-bottom: 60px;
+}
 
 #navigationBar {
   display: flex;
@@ -20,7 +25,10 @@ html, body {
 }
 
 #navigationBar li {
-  margin: 0 10px;
+margin: 0px 50px;
+float: left;
+background-color: gray;
+position: relative;
 }
 
 #navigationBar li a {
@@ -75,6 +83,13 @@ img{
     max-width: 50%;
     align-items: center;
 }
+
+
+
+
+
+
+/*Other Pages*/
 
 footer {
   background-color: #182f47;
