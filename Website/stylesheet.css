@@ -94,7 +94,7 @@ position: relative;
 }
 
 /* Image styling for logo */
-img {
+.logo {
   max-height: 100px;  /* Set maximum height for logo */
   max-width: 100%;    /* Ensure it scales responsively */
   height: auto;       /* Maintain aspect ratio */
