@@ -13,6 +13,12 @@ html, body {
     padding-bottom: 60px;
 }
 
+.logocontainer{
+  display: grid;
+  grid-template-columns: 100%;
+        
+}
+
 #navigationBar {
   display: flex;
   justify-content: center;
