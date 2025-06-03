@@ -493,3 +493,37 @@ div.about-us-card-title{
 
 .news2 { grid-area: news2; }
 
+/* Activities */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.carousel-container .carousel {
+  width: 100%;
+}
+
+.carousel-container .carousel-inner {
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-container .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container {
+  padding-top: 20px;
+  display: flex;
+}
+.card{
+  background-color: #4691e0;
+  border-color: black;
+  box-shadow: 10px 10px;
+}
