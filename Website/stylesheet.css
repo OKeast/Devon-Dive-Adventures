@@ -184,6 +184,8 @@ footer {
   padding: 10px;
   color: white;
   text-align: center;
+  bottom: 0;
+  height: 100%;
 }
 
 .footertitle {
