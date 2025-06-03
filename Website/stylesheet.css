@@ -94,7 +94,7 @@ position: relative;
 }
 
 /* Image styling for logo */
-img {
+.logo {
   max-height: 100px;  /* Set maximum height for logo */
   max-width: 100%;    /* Ensure it scales responsively */
   height: auto;       /* Maintain aspect ratio */
@@ -467,5 +467,27 @@ div.about-us-card-title{
         height:auto;
     }
 
-/* Home Page */
+/* News Page */
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px 50px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "newsimage1 news1 news1"
+    "newsimage2 news2 news2"
+    ". . .";
+}
+
+.newsimage1 { 
+  grid-area: newsimage1; 
+  width: 1000px; 
+  height:1000px;
+}
+
+.news1 { grid-area: news1; }
+
+.newsimage2 { grid-area: newsimage2; }
+
+.news2 { grid-area: news2; }
 
