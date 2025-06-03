@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>About Us</title>
+</head>
+
+<style>
+
+
+
+  .flex-container-1 {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-flow: row wrap;
+    background-image: url(Images/background.jpg);
+    background-size: cover;;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  
+
+  .flex-container-1 > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    min-width: 500px;
+    flex: 45%;
+    align-items: stretch;
+  }
+
+  
+  .flex-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .flex-container-2 > div {
+    margin: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    min-width: 50px;
+    align-items: stretch;
+  }
+
+  body{
+    background-color: #2E5A88;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+
+  div.about-us-card-rounded {
+    background-color: rgba(0, 0, 0, 0.436);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 33px;
+  }
+
+  div.about-us-card-title-rounded{
+    text-align: center;
+    color: azure;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+
+  .learn-more-buttom{
+    background-color: rgba(255, 255, 255, 0.781);
+    color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    height: 50px;
+    width: 50%;
+    margin-top: auto;
+    margin-left: 22.5%;
+    margin-bottom: 2%;
+  }
+
+  div.about-us-card {
+    background-color: rgba(0, 0, 0, 0.436);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 0px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  div.about-us-card-title{
+    text-align: center;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .employee-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10%;
+    background-color: rgb(71, 70, 70);
+    flex: 1 1 30%;
+    max-width: 300px;
+    margin: 20px;
+  }
+
+
+  
+
+  .employee-container{
+    padding: 2px 16px;
+  }
+
+  .employee-image{
+    border-radius: 10% 10% 0 0;
+    width: 100%;
+    height: auto;
+  }
+
+</style>
+<!-- why no stylesheet
+ This is tragic -->
+
+<body>
+
+<!--Nav Bar-->
+  <div class="stickybanner">
+    <div class="banner">
+        <img src = "DDALogo.png" alt = "logo">
+    </div>
+    <div class="navbar"></div>
+        <ul id = "navigationBar">
+           <li><a href="page1.html">Home</a></li>
+           <li><a href="page2.html">Store</a></li>
+           <li><a href="page3.html">Contact</a></li>
+           <li><a href="about_us.html">About Us</a></li>
+     </ul>
+    </div>
+
+
+<!--Title-->
+  <h1>
+      About Us
+  </h1>
+
+  <hr>
+
+<div class="flex-container-1">
+
+  
+<!--Who Are We Section-->
+  <div class="about-us-card-rounded">
+    <div class="about-us-card-title-rounded">
+      <h2>
+         Who we are
+      </h2>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Eveniet ipsa corrupti, maxime cupiditate beatae quidem similique vitae commodi dolor praesentium maiores earum, sequi veniam eligendi consectetur, ratione ea doloribus! 
+      Voluptatibus?
+    </p>
+    <button class="learn-more-buttom">
+      Learn More
+    </button>
+
+  </div>
+
+  <!--Company History Section-->
+  <div class="about-us-card-rounded">
+    <div class="about-us-card-title-rounded">
+      <h2> 
+          Our History
+      </h2>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Iste officia porro distinctio dignissimos obcaecati atque reiciendis architecto voluptatem aspernatur, deserunt nemo? Velit dolorem quaerat sit!
+      Dolore iusto odit neque exercitationem!
+    </p>
+    <button class="learn-more-buttom">
+      Learn More
+    </button>
+
+  </div>
+</div>
+
+<!--WhiteSpace-->
+<br>
+<br>
+<br>
+
+<!--Meet The Team Section-->
+<div class="about-us-card">
+  <div class="about-us-card-title">
+    <h2>
+     Meet the team
+    </h2>
+  </div>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, error commodi explicabo nihil temporibus aliquid, culpa ut nesciunt quas illum enim similique voluptates consectetur dolorem assumenda, soluta illo maiores nostrum.
+  </p>
+</div>
+
+<div class="flex-container-2">
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+
+<div class="employee-card">
+  <img class="employee-image" src="Images/Employee.png" alt="Avatar">
+  <div class="employee-container">
+    <h4><b>John Doe</b></h4>
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+</div>
+  <footer>
+    <p>footer</p>
+  </footer>
+    
+</body>
+
+
+
+
+
+</html>
