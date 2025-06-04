@@ -14,20 +14,7 @@
   
 
     <style>
-      .btn-open-popup {
-            padding: 12px 24px;
-            font-size: 18px;
-            background-color: green;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
 
-        .btn-open-popup:hover {
-            background-color: #4caf50;
-        }
 
         .overlay-container {
             display: none;
@@ -49,7 +36,7 @@
             padding: 24px;
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-            width: 320px;
+            width: 500px;
             text-align: center;
             opacity: 0;
             transform: scale(0.8);
@@ -119,6 +106,9 @@
             display: flex;
             opacity: 1;
         }
+        .popup-box > p {
+          color: #444;
+        }
     </style>
   </head>
 
@@ -151,10 +141,6 @@
                    <li><a href="about_us.html">About Us</a></li>
 
                 </ul>
-        </div>
-        <h1>Bookings</h1>
-        <div class = "main">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut mauris non ligula eleifend ultrices non sodales quam. Suspendisse eu bibendum metus. Integer porta nulla eu porttitor tincidunt. Sed commodo faucibus urna. Nullam id facilisis ligula, vitae hendrerit felis. Aenean pulvinar eleifend luctus. Nam rhoncus et elit vitae volutpat. Duis dapibus diam felis, eget accumsan augue aliquet quis. Quisque mi tellus, egestas vel tortor vel, interdum pharetra nisi. Integer neque urna, maximus non ipsum eu, rhoncus tempus tellus. Praesent vitae orci quam. Quisque egestas tristique ante, sit amet volutpat magna. Nam porta nisl lorem, quis vulputate ex pharetra in. Fusce viverra vestibulum sodales. Aliquam vitae sodales metus, et condimentum sem. Phasellus fringilla dignissim iaculis.</p>
         </div>
         <div id="popupOverlay" 
          class="overlay-container">
@@ -214,6 +200,17 @@
                     onclick="togglePopup()">
               Close
               </button>
+            </div>
+          </div>
+
+          <div id="secondPopupOverlay" class="overlay-container">
+            <div class="popup-box">
+              <h2 style="color: green;">About This Activity</h2>
+              <p id="secondPopupText">This is your second popup content.</p>
+              <button class="btn-close-popup" onclick="toggleSecondPopup()">Close</button>
+            </div>
+          </div>
+              
         </div>
     </div>
 
@@ -222,6 +219,17 @@
             const overlay = document.getElementById('popupOverlay');
             overlay.classList.toggle('show');
         }
+
+        function toggleSecondPopup(text = null) {
+    const overlay = document.getElementById('secondPopupOverlay');
+    const textBox = document.getElementById('secondPopupText');
+
+    if (text) {
+      textBox.textContent = text;
+    }
+
+    overlay.classList.toggle('show');
+  }
     </script>
         <div class="about-us-card">
             <div class="about-us-card-title">
@@ -245,11 +253,11 @@
                     alt="Scuba Diving Thumbnail"
                     style="height: 225px; width: 100%; display: block;">            
                     <div class="card-body">
-                      <p class="card-text, text-dark">Night Boat Sailing</p>
+                      <p class="card-text, text-dark">Night Sailing</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleSecondPopup('Night Sailing is Fun!')">Learn More </button>
                         </div>
                         <small class="text-muted"> £50</small>
                       </div>
@@ -266,8 +274,8 @@
                       <p class="card-text, text-dark">Day Sailing</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleSecondPopup('Day Sailing is Fun!')">Learn More </button>
                         </div>
                         <small class="text-muted"> £50</small>
                       </div>
@@ -284,8 +292,8 @@
                       <p class="card-text, text-dark">Day & Night Sailing</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleSecondPopup('Sail the till the new dawn!')">Learn More </button>
                         </div>
                         <small class="text-muted"> £50</small>
                       </div>
@@ -302,8 +310,8 @@
                       <p class="card-text, text-dark">Night Diving</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleSecondPopup('Night Diving is Fun!')">Learn More </button>
                         </div>
                         <small class="text-muted"> £50</small>
                       </div>
@@ -320,8 +328,8 @@
                       <p class="card-text, text-dark">Day Diving</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleSecondPopup('Day Diving is Fun!')">Learn More </button>
                         </div>
                         <small class="text-muted"> £50</small>
                       </div>
@@ -339,8 +347,8 @@
                       <p class="card-text, text-dark">Day & Night Diving</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleSecondPopup('Dive in the best of both worlds!')">Learn More </button>
                         </div>
                         <small class="text-muted"> £50</small>
                       </div>
