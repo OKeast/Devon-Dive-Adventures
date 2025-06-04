@@ -11,8 +11,116 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
         
-    </head>
+  
 
+    <style>
+      .btn-open-popup {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: green;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-open-popup:hover {
+            background-color: #4caf50;
+        }
+
+        .overlay-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 9999;
+        }
+
+        .popup-box {
+            background: #fff;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            width: 320px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #444;
+            text-align: left;
+        }
+
+        .form-input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn-submit,
+        .btn-close-popup {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-submit {
+            background-color: green;
+            color: #fff;
+        }
+
+        .btn-close-popup {
+            margin-top: 12px;
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        .btn-submit:hover,
+        .btn-close-popup:hover {
+            background-color: #4caf50;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .overlay-container.show {
+            display: flex;
+            opacity: 1;
+        }
+    </style>
+  </head>
 
     <body>
     <div class="logocontainer">
@@ -48,6 +156,200 @@
         <div class = "main">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut mauris non ligula eleifend ultrices non sodales quam. Suspendisse eu bibendum metus. Integer porta nulla eu porttitor tincidunt. Sed commodo faucibus urna. Nullam id facilisis ligula, vitae hendrerit felis. Aenean pulvinar eleifend luctus. Nam rhoncus et elit vitae volutpat. Duis dapibus diam felis, eget accumsan augue aliquet quis. Quisque mi tellus, egestas vel tortor vel, interdum pharetra nisi. Integer neque urna, maximus non ipsum eu, rhoncus tempus tellus. Praesent vitae orci quam. Quisque egestas tristique ante, sit amet volutpat magna. Nam porta nisl lorem, quis vulputate ex pharetra in. Fusce viverra vestibulum sodales. Aliquam vitae sodales metus, et condimentum sem. Phasellus fringilla dignissim iaculis.</p>
         </div>
+        <div id="popupOverlay" 
+         class="overlay-container">
+        <div class="popup-box">
+            <h2 style="color: green;">Book Your Trip</h2>
+            <form class="form-container">
+                <label class="form-label" 
+                       for="fname">
+                  First Name:
+                  </label>
+                <input class="form-input" type="text" 
+                       placeholder="First Name" 
+                       id="name" name="name" required>
+
+                <label class="form-label" for="lname">Last Name:</label>
+                <input class="form-input"
+                       type="text" 
+                       placeholder="Last Name"
+                       id="lname" 
+                       name="lname" required>
+
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Enter Your Email"
+                       id="email" 
+                       name="email" required>
+                
+                <label class="form-label" for="pay-card">Card:</label>
+                <input class="form-input"
+                       type="number" 
+                       placeholder="xxxx-xxxx-xxxx-xxxx"
+                       id="pay-card" 
+                       name="pay-card" required>
+
+                <label class="form-label" for="address">Billing Address</label>
+                <input class="form-input"
+                       type="text" 
+                       placeholder="Enter Your Billing Address"
+                       id="address" 
+                       name="address" required>
+
+                <label class="form-label" for="address">Booking Date</label>
+                <input class="form-input"
+                       type="date" 
+                       placeholder="DD/MM/YYYY"
+                       id="date" 
+                       name="date" required>                      
+
+                <button class="btn-submit" 
+                        type="submit">
+                  Submit
+                  </button>
+            </form>
+
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()">
+              Close
+              </button>
+        </div>
+    </div>
+
+    <script>
+        function togglePopup() {
+            const overlay = document.getElementById('popupOverlay');
+            overlay.classList.toggle('show');
+        }
+    </script>
+        <div class="about-us-card">
+            <div class="about-us-card-title">
+              <h2>
+               Activities we offer
+              </h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, error commodi explicabo nihil temporibus aliquid, culpa ut nesciunt quas illum enim similique voluptates consectetur dolorem assumenda, soluta illo maiores nostrum.
+            </p>
+          </div>
+          
+          <div style="background-image: linear-gradient(#447db9 10%, #193c61 90%);">
+            <div class="container">
+          
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"
+                    src="Images/scuba-diving.avif"
+                    alt="Scuba Diving Thumbnail"
+                    style="height: 225px; width: 100%; display: block;">            
+                    <div class="card-body">
+                      <p class="card-text, text-dark">Night Boat Sailing</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                        </div>
+                        <small class="text-muted"> £50</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"
+                    src="Images/scuba-diving.avif"
+                    alt="Scuba Diving Thumbnail"
+                    style="height: 225px; width: 100%; display: block;">
+                    <div class="card-body">
+                      <p class="card-text, text-dark">Day Sailing</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                        </div>
+                        <small class="text-muted"> £50</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"
+                    src="Images/scuba-diving.avif"
+                    alt="Scuba Diving Thumbnail"
+                    style="height: 225px; width: 100%; display: block;">
+                    <div class="card-body">
+                      <p class="card-text, text-dark">Day & Night Sailing</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                        </div>
+                        <small class="text-muted"> £50</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"
+                    src="Images/scuba-diving.avif"
+                    alt="Scuba Diving Thumbnail"
+                    style="height: 225px; width: 100%; display: block;">            
+                    <div class="card-body">
+                      <p class="card-text, text-dark">Night Diving</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                        </div>
+                        <small class="text-muted"> £50</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"
+                    src="Images/scuba-diving.avif"
+                    alt="Scuba Diving Thumbnail"
+                    style="height: 225px; width: 100%; display: block;">
+                    <div class="card-body">
+                      <p class="card-text, text-dark">Day Diving</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                        </div>
+                        <small class="text-muted"> £50</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>      <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+
+                    <img class="card-img-top"
+                    src="Images/scuba-diving.avif"
+                    alt="Scuba Diving Thumbnail"
+                    style="height: 225px; width: 100%; display: block;">
+
+                    <div class="card-body">
+                      <p class="card-text, text-dark">Day & Night Diving</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary, btn-open-popup" onclick="togglePopup()">Book</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                        </div>
+                        <small class="text-muted"> £50</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+
     </body>
 
     <footer>
