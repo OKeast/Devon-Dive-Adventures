@@ -1,96 +1,112 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Devon Dive</title>
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="javascript" href="index.js">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-       
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Devon Dive</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
 
+<body>
+  <div class="logocontainer">
+    <div class="stickybanner">
+      <div class="banner">
+        <div class="bannerleft">
+          <img class="logo" src="logo-nobg.png" alt="logo">
+        </div>
+        <div class="bannerright">
+          <button class="button" onclick="window.location.href='login.html';" id="loginBtn">Login</button>
 
-    <body>
-    <div class="logocontainer">
-        <div class="stickybanner">
-            <div class="banner">
-                <div class = "bannerleft">
-                    <img class = "logo"src = "logo-nobg.png" alt = "logo">
-                </div>
-                <div class = "bannerright">
-                    <button class="button" onclick="window.location.href='Login.html';">Login</button>
+          <span id="greeting" class="me-2 text-white"></span>
+          <button class="button" id="logoutBtn" style="display:none;">Logout</button>
 
-                        <div class="store" onclick="window.location.href='store.html';">
-                            <img src="basket.png" alt="basket" width = 50 height = 50/>
-                        </div>
-                </div>
-            </div>
-        </div>    
+          <div class="store" onclick="window.location.href='store.html';">
+            <img src="basket.png" alt="basket" width="50" height="50"/>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-                <ul id = "navigationBar">
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="news.html">News and Offers</a></li>
-                   <li><a href="included.html">Whats Included</a></li>
-                   <li><a href="activities.html">Activitys</a></li>
-                   <li><a href="bookings.html">Bookings</a></li>
-                   <li><a href="store.html">Store</a></li>
-                   <li><a href="reviews.html">Reviews</a></li>
-                   <li><a href="about_us.html">About Us</a></li>
+  <ul id="navigationBar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News and Offers</a></li>
+    <li><a href="included.html">What's Included</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="bookings.html">Bookings</a></li>
+    <li><a href="store.html">Store</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="about_us.html">About Us</a></li>
+  </ul>
 
-                </ul>
-        </div>
-        <h1>Welcome to Devon Dive Adventures!</h1>
-        <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="background.jpg" class="d-block w-100" alt="...">
-            </div> 
-            <div class="carousel-item">
-            <img src="small-boats-pier-sailboat-regatta-footage-008830261_iconl.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="scuba-diving.avif" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        </div>
-        <div class = "main">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut mauris non ligula eleifend ultrices non sodales quam. Suspendisse eu bibendum metus. Integer porta nulla eu porttitor tincidunt. Sed commodo faucibus urna. Nullam id facilisis ligula, vitae hendrerit felis. Aenean pulvinar eleifend luctus. Nam rhoncus et elit vitae volutpat. Duis dapibus diam felis, eget accumsan augue aliquet quis. Quisque mi tellus, egestas vel tortor vel, interdum pharetra nisi. Integer neque urna, maximus non ipsum eu, rhoncus tempus tellus. Praesent vitae orci quam. Quisque egestas tristique ante, sit amet volutpat magna. Nam porta nisl lorem, quis vulputate ex pharetra in. Fusce viverra vestibulum sodales. Aliquam vitae sodales metus, et condimentum sem. Phasellus fringilla dignissim iaculis.</p>
-        </div>
-    </body>
+  <h1>Welcome to Devon Dive Adventures!</h1>
 
-    <footer>
-        
-        <div class = "footertitle">
-            <h1>Devon Dive Adventure</h1>
-        </div>
-        <div class = "footermain">
-            <div class = "footerleft">
-                <p class = "smalltitle">Contact us</p>
-                <hr class="soliddivider">
-                <p>Phone: 56744 324876</p>
-                <p>Email: DevonDive@Adventure.co.uk</p>
-            </div>
-            <div class = footerright>
-                <p class = "smalltext">visit our review page to hear what our customers think!</p>
-                <button class="button" onclick="window.location.href='reviews.html';">Reviews</button>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="background.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="small-boats-pier-sailboat-regatta-footage-008830261_iconl.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="scuba-diving.avif" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-            </div>
-        </div>
-    </footer>
+  <div class="main">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+
+  <footer>
+    <div class="footertitle">
+      <h1>Devon Dive Adventure</h1>
+    </div>
+    <div class="footermain">
+      <div class="footerleft">
+        <p class="smalltitle">Contact us</p>
+        <hr class="soliddivider">
+        <p>Phone: 56744 324876</p>
+        <p>Email: DevonDive@Adventure.co.uk</p>
+      </div>
+      <div class="footerright">
+        <p class="smalltext">Visit our review page to hear what our customers think!</p>
+        <button class="button" onclick="window.location.href='reviews.html';">Reviews</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const user = localStorage.getItem("devonDiveUser");
+    const greetingEl = document.getElementById("greeting");
+    const logoutBtn = document.getElementById("logoutBtn");
+    const loginBtn = document.getElementById("loginBtn");
+
+    if (user) {
+      greetingEl.textContent = `Welcome, ${user}`;
+      logoutBtn.style.display = "inline-block";
+      loginBtn.style.display = "none";
+
+      logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("devonDiveUser");
+        window.location.reload();
+      });
+    }
+  </script>
+</body>
 </html>

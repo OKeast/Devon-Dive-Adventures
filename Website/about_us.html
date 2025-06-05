@@ -18,20 +18,23 @@
 
   <body>
     <div class="logocontainer">
-        <div class="stickybanner">
-            <div class="banner">
-                <div class = "bannerleft">
-                    <img class = "logo"src = "logo-nobg.png" alt = "logo">
-                </div>
-                <div class = "bannerright">
-                    <button class="button" onclick="window.location.href='Login.html';">Login</button>
+      <div class="stickybanner">
+        <div class="banner">
+          <div class="bannerleft">
+            <img class="logo" src="logo-nobg.png" alt="logo">
+          </div>
+          <div class="bannerright">
+            <button class="button" onclick="window.location.href='login.html';" id="loginBtn">Login</button>
 
-                        <div class="store" onclick="window.location.href='store.html';">
-                            <img src="basket.png" alt="basket" width = 50 height = 50/>
-                        </div>
-                </div>
+            <span id="greeting" class="me-2 text-white"></span>
+            <button class="button" id="logoutBtn" style="display:none;">Logout</button>
+
+            <div class="store" onclick="window.location.href='store.html';">
+              <img src="basket.png" alt="basket" width="50" height="50"/>
             </div>
-        </div>    
+          </div>
+        </div>
+      </div>
     </div>
 
                 <ul id = "navigationBar">
@@ -261,24 +264,40 @@
   </div>
 
   </div>
-  </body>
   <footer>
-      
-      <div class = "footertitle">
-          <h1>Devon Dive Adventure</h1>
+    <div class="footertitle">
+      <h1>Devon Dive Adventure</h1>
+    </div>
+    <div class="footermain">
+      <div class="footerleft">
+        <p class="smalltitle">Contact us</p>
+        <hr class="soliddivider">
+        <p>Phone: 56744 324876</p>
+        <p>Email: DevonDive@Adventure.co.uk</p>
       </div>
-      <div class = "footermain">
-          <div class = "footerleft">
-              <p class = "smalltitle">Contact us</p>
-              <hr class="soliddivider">
-              <p>Phone: 56744 324876</p>
-              <p>Email: DevonDive@Adventure.co.uk</p>
-          </div>
-          <div class = footerright>
-              <p class = "smalltext">visit our review page to hear what our customers think!</p>
-              <button class="button" onclick="window.location.href='reviews.html';">Reviews</button>
-
-          </div>
+      <div class="footerright">
+        <p class="smalltext">Visit our review page to hear what our customers think!</p>
+        <button class="button" onclick="window.location.href='reviews.html';">Reviews</button>
       </div>
+    </div>
   </footer>
+
+  <script>
+    const user = localStorage.getItem("devonDiveUser");
+    const greetingEl = document.getElementById("greeting");
+    const logoutBtn = document.getElementById("logoutBtn");
+    const loginBtn = document.getElementById("loginBtn");
+
+    if (user) {
+      greetingEl.textContent = `Welcome, ${user}`;
+      logoutBtn.style.display = "inline-block";
+      loginBtn.style.display = "none";
+
+      logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("devonDiveUser");
+        window.location.reload();
+      });
+    }
+  </script>
+</body>
 </html>
