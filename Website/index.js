@@ -22,3 +22,20 @@ prevButton.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', updateCarousel);
+
+
+function togglePopup() {
+  const overlay = document.getElementById('popupOverlay');
+  overlay.classList.toggle('show');
+}
+
+function toggleSecondPopup(text = null) {
+const overlay = document.getElementById('secondPopupOverlay');
+const textBox = document.getElementById('secondPopupText');
+
+if (text) {
+textBox.textContent = text;
+}
+
+overlay.classList.toggle('show');
+}
