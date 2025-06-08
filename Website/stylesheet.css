@@ -85,7 +85,7 @@ position: relative;
   align-items: center;
   padding: 10px 20px;
   background-color: #182f47;
-  border: 1px solid green;
+  border: 1px;
 }
 
 /* Left section */
@@ -170,7 +170,7 @@ position: relative;
 .main{
     display: flex;
     flex-direction: column;
-    border: 1px, solid, green;
+    border: 1px;
     margin: 25px 25% 5px 25%;
     height:auto;
     width: auto;
@@ -654,4 +654,25 @@ color: #444;
   margin-bottom: 10px;
   border-radius: 5px;
   color: black;
+}
+
+
+
+.included-section h2 {
+  margin-bottom: 10px;
+}
+
+.included-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.included-section {
+  background-color: #182f47;
+  color: black;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
