@@ -635,3 +635,23 @@ div.about-us-card-title{
 .popup-box > p {
 color: #444;
 }
+
+.review-form {
+  margin: 20px;
+}
+
+.review-form textarea {
+  resize: none;
+}
+
+.review-list {
+  margin: 20px;
+}
+
+.review-list div {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: black;
+}
